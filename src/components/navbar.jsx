@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useMemo } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useNavigate } from "react-router-dom"
 import DiscordModal from "./discordpage";
+import AppLogo from "../assets/logo.png";
 
 export default function Navbar({ toggleSidebar }){
     const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -164,8 +165,11 @@ export default function Navbar({ toggleSidebar }){
                 </svg>
             </span>
           </button>
-          <div className="font-['Inter'] text-[28px] leading-[1.1] tracking-[-0.04em] font-extrabold text-slate-900 dark:text-[#ffffff]">
-            ARCHIVE_X
+          <div className="flex items-center gap-3">
+            <img src={AppLogo} alt="Archive X Logo" className="w-8 h-8 rounded-lg shadow-sm" />
+            <div className="font-['Inter'] text-[28px] leading-[1.1] tracking-[-0.04em] font-extrabold text-slate-900 dark:text-[#ffffff]">
+              ARCHIVE_X
+            </div>
           </div>
         </div>
         
