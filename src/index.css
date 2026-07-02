@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html, body {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+html.dark, html.dark body {
+  background-color: #131315;
+}
+
+/* Elegant sidebar scrollbar */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 3px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.dark .sidebar-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.dark .sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+          .bg-grid-pattern {
+              background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+              background-size: 24px 24px;
+          }
+
+          /* Custom Scrollbar for a more technical feel */
+          ::-webkit-scrollbar { width: 8px; height: 8px; }
+          ::-webkit-scrollbar-track { background: #131315; }
+          ::-webkit-scrollbar-thumb { background: #353437; border-radius: 4px; }
+          ::-webkit-scrollbar-thumb:hover { background: #444748; }
