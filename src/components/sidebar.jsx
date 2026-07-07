@@ -292,7 +292,7 @@ export default function SideBar({ isOpen, toggleSidebar }){
             <div className="h-px bg-gradient-to-r from-transparent via-black/[0.08] dark:via-white/[0.08] to-transparent" />
           </div>
           <div className="flex items-center gap-3 cursor-pointer px-2 py-2 rounded-lg hover:bg-black/[0.03] dark:hover:bg-white/[0.04] transition-colors group/profile"
-            onClick={() => window.open("https://sayyidinaa.vercel.app/", "_blank")}>
+            onClick={() => window.open("https://sayyidina.vercel.app/", "_blank")}>
             <div className="w-9 h-9 rounded-full overflow-hidden ring-2 ring-black/[0.06] dark:ring-white/[0.08] group-hover/profile:ring-black/[0.12] dark:group-hover/profile:ring-white/[0.15] transition-all">
               <img src={profileImg} className="w-full h-full object-cover" alt="profile" />
             </div>
